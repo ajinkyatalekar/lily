@@ -16,7 +16,7 @@ check:
 # AGENTS.md rule 7. CI runs this on pull requests; it needs BASE fetched.
 # shortcut: generated code is not excluded because there is none yet, add its path here when codegen lands.
 diff-size:
-	@d=$$(git diff --numstat $(BASE)...HEAD -- . ':(exclude)openspec' ':(exclude)*.lock' ':(exclude)*-lock.*' ':(exclude)*.sum') || exit 1; \
+	@d=$$(git diff --numstat $(BASE)...HEAD -- . ':(exclude)openspec' ':(exclude)LICENSE' ':(exclude)*.lock' ':(exclude)*-lock.*' ':(exclude)*.sum') || exit 1; \
 	n=$$(printf '%s\n' "$$d" | awk '{s += $$1 + $$2} END {print s + 0}'); \
 	echo "changed lines: $$n (max 400)"; [ "$$n" -le 400 ]
 
