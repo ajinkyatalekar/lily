@@ -6,4 +6,4 @@ An open-source platform for hosting and managing game servers, starting with Min
 
 Lily is written and maintained mostly by coding agents, with humans deciding what the product does. The rules they follow are in [`AGENTS.md`](AGENTS.md), and the pipeline from request to merged change is in [`process/`](process/).
 
-No license has been chosen yet.
+Licensed under the [GNU Affero General Public License v3.0](LICENSE). Anyone may run, modify and host Lily. A modified version offered as a service must publish its changes under the same license.
