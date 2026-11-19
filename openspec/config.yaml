@@ -1,0 +1,29 @@
+schema: spec-driven
+
+# Shown to the agent writing any artifact.
+context: |
+  Lily is an open-source platform for hosting game servers (Minecraft first), and the hosted website
+  built on it: customers sign up, log in, and create and manage their own servers. We operate the
+  whole fleet: shared cloud hosts by default, bare metal on request, all provisioned and run by us.
+  Paid tiers charge what the infrastructure costs. Customers never see a host, and everything they
+  upload or run is untrusted. This repo is public: nothing secret goes into any artifact.
+  Stack: Go (control plane, host agent), React and TypeScript (web), one Docker container per game server.
+  Agents build and maintain it. A human approves every proposal and design and reads little else,
+  so write for someone deciding in two minutes. Rules: /AGENTS.md. Cycle scope: /ROADMAP.md.
+
+rules:
+  proposal:
+    - Name the ROADMAP.md cycle this belongs to; if it does not fit that cycle's In list, stop and add it under Later instead
+    - State what a user can do afterwards that they could not do before
+    - Include an "Out of scope" section listing what was deliberately left out
+    - Stay under 400 words
+  design:
+    - Name the alternative you rejected and why
+    - List every new dependency and every new module, with why it could not be avoided
+    - Put anything touching tenant isolation, auth, billing or data deletion under "Risks"
+  specs:
+    - Every requirement has at least one scenario that can be written as an automated test, including what happens when it fails
+  tasks:
+    - Each task fits one PR of at most 400 changed lines and names the directories it may touch
+    - When a change spans modules, the contract between them changes in its own task, before any task that uses it
+    - The last task archives the change

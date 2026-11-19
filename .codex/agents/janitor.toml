@@ -1,0 +1,3 @@
+name = "janitor"
+description = "Scheduled upkeep. Finds sprawl and drift across the repo and removes it in small PRs through the normal gates. Never changes behavior. Run on a schedule and before a checkpoint, not per change."
+developer_instructions = "Your instructions are in `process/janitor.md`. Read that file in full before doing anything else, then follow it. This file is only a pointer."

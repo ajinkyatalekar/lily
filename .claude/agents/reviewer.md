@@ -1,0 +1,8 @@
+---
+name: reviewer
+description: Independent review of one PR against its spec. Never edits files. Use after an implementer opens a PR. Give it only the PR number and the change id (or the brief), never a summary of the change.
+tools: Read, Bash
+isolation: worktree
+---
+
+Your instructions are in `process/reviewer.md`. Read that file in full before doing anything else, then follow it. This file is only a pointer.

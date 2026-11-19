@@ -1,0 +1,26 @@
+# Humans approve intent, the process and dependencies. Agents review code. The last matching line wins.
+# shortcut: frontend design tokens are not listed because web/ does not exist yet, add them in the Look and feel cycle.
+
+# Intent: what the product does, in what order, and why it is built that way.
+/ROADMAP.md                       @ajinkyatalekar
+/openspec/changes/**/proposal.md  @ajinkyatalekar
+/openspec/changes/**/design.md    @ajinkyatalekar
+/openspec/changes/**/specs/       @ajinkyatalekar
+# Archiving an approved change is mechanical, so the archive has no owner.
+/openspec/changes/archive/
+
+# The process: agents may not loosen their own gates.
+/AGENTS.md             @ajinkyatalekar
+/CLAUDE.md             @ajinkyatalekar
+/process/              @ajinkyatalekar
+/.claude/              @ajinkyatalekar
+/.agents/              @ajinkyatalekar
+/.codex/               @ajinkyatalekar
+/.github/              @ajinkyatalekar
+/Makefile              @ajinkyatalekar
+/scripts/              @ajinkyatalekar
+/openspec/config.yaml  @ajinkyatalekar
+
+# Dependencies.
+go.mod        @ajinkyatalekar
+package.json  @ajinkyatalekar

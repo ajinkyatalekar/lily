@@ -1,0 +1,7 @@
+---
+name: implementer
+description: Implements exactly one task of an approved change (or one fix/refactor brief) inside a given directory scope and opens a PR. Give it the change id and task number (or the brief) and the directories it may touch.
+isolation: worktree
+---
+
+Your instructions are in `process/implementer.md`. Read that file in full before doing anything else, then follow it. This file is only a pointer.
